@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Calcular Monto a Pagar</h1>
+  </div>
+
+<body>
+
+      <form method="post">
+
+        <input type="text" class="form-control" name="tarjeta" placeholder="Numero de Tarjeta" /><br />
+
+        <input type="date" class="form-control" name="fecha" placeholder="fecha" /><br />
+        <input type="number" class="form-control" name="monto" placeholder="monto"> <br />
+       
+
+        <button type="submit">Calcular</button>
+
+    </form>
+<br />
+    <h2>resultado: @ViewData["resultado"]</h2>
+
+</body>
